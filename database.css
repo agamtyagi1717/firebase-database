@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+}
+
+trow{
+    
+    display: flex;
+    padding: 20px;
+}
+
+td{
+    padding-inline: 50px;
+}
+
+button{
+    padding: 2px;
+}
+
+.labs{
+    display: inline-block;
+    width: 100px;
+}
+input{
+    width: 250px;
+}
+
+.database-btn{
+    background-color: blue;
+    color: white;
+    margin: 3px;
+    padding: 7px;
+}
+
+.database-btn:hover{
+    background-color: black;
+}
+
+.datatable{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+ 
+  
+  
