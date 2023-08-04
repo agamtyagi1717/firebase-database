@@ -21,7 +21,7 @@
     width: 30%;
     margin: 50px auto;
     padding: 20px;
-    background: linear-gradient(135deg, #36d448, #511996);
+    background: linear-gradient(135deg, #d46836, #732cc9);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
@@ -49,10 +49,10 @@
   input {
     margin-bottom: 15px;
     padding: 12px;
-    border: 1px solid #555555;
+    border: 2px solid black;
     border-radius: 5px;
     font-size: 16px;
-    background: linear-gradient(135deg, #000000, #363636);
+    background: #4d1023;
     color: #ffffff;
     transition: border-color 0.3s ease;
   }
@@ -68,14 +68,14 @@
   }
   
   input[type="submit"] {
-    background-color: #4CAF50;
+    background: #4CAF50;
     color: #ffffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background: #45a049;
   }
 
   @media screen and (max-width: 650px) {
