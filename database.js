@@ -33,7 +33,7 @@ var tbody=document.getElementById('tbody1');
 var userList=[];
 
 function AddItem(profilePic, name, phone, email, dateOfBirth){
-    let trow = document.createElement("trow");
+    let trow = document.createElement("thead");
     let td1=document.createElement("td");
     let td2=document.createElement("td");
     let td3=document.createElement("td");

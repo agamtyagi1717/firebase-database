@@ -1,15 +1,14 @@
+
+
 h1{
     text-align: center;
 }
 
-trow{
-    
-    display: flex;
-    padding: 20px;
-}
 
 td{
+    justify-content: center;
     padding-inline: 50px;
+    padding-block: 30px;
 }
 
 button{
@@ -36,9 +35,7 @@ input{
 }
 
 .datatable{
-    display: flex;
-    justify-content: center;
-    
+    margin-left: 140px;
 }
 
 
