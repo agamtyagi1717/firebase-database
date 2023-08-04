@@ -1,4 +1,4 @@
-import {getDatabase, ref, child, remove, get} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+import {getDatabase, ref, child, remove, get, set, update} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
 
 
 
@@ -144,14 +144,43 @@ function getAllDataOnce(){
     })
 }
 
+function AddUser(){
+    set(ref(db, "contactForm/"+ ModName.value),{
+        name: ModName.value, 
+        phone: ModPhone.value,
+        email: ModEmail.value,
+        dateOfBirth: ModDate.value
+    })
+
+    alert("User added to the database successfully!");
+    window. location. reload();
+}
+window.AddUser=AddUser;
+
+function UpdateUser(){
+    update(ref(db, "contactForm/"+ ModName.value),{
+        name: ModName.value, 
+        phone: ModPhone.value,
+        email: ModEmail.value,
+        dateOfBirth: ModDate.value
+    })
+
+    alert("User data updated in the database successfully!");
+    window. location. reload();
+}
+window.UpdateUser=UpdateUser;
 
 
 function DeleteUser(){
-    firebase.database().ref('contactForm'+name);
-}
+    remove(ref(db, "contactForm/"+ ModName.value));
 
-window.onload=DeleteUser;
+    alert("User data deleted from the database successfully!");
+    window. location. reload();
+}
 window.DeleteUser=DeleteUser;
+
+
+
 
 window.onload=getAllDataOnce;
 
