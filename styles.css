@@ -78,7 +78,7 @@
     background-color: #45a049;
   }
 
-  @media screen and (max-width: 499px) {
+  @media screen and (max-width: 650px) {
     .container{
       width: 80%;
       padding: 16px;
