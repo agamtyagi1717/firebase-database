@@ -55,7 +55,7 @@ function AddItem(profilePic, name, phone, email, dateOfBirth){
     trow.appendChild(td2);
     trow.appendChild(td3);
     trow.appendChild(td4);
-    // trow.appendChild(td5);
+    trow.appendChild(td5);
 
     var controlDiv = document.createElement("div");
 
