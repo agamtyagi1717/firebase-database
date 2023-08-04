@@ -59,8 +59,8 @@ function AddItem(profilePic, name, phone, email, dateOfBirth){
 
     var controlDiv = document.createElement("div");
 
-    controlDiv.innerHTML='<button type="button" class="database-btn" data-toggle="modal" data-target="#exampleModalCenter" onclick="FillTboxes(null)">Add user</button>';
-    controlDiv.innerHTML+='<button type="button" class="database-btn" data-toggle="modal" data-target="#exampleModalCenter" onclick="FillTboxes('+userNo+')">Edit record</button>';
+    controlDiv.innerHTML='<button type="button" class="database-btn1" data-toggle="modal" data-target="#exampleModalCenter" onclick="FillTboxes(null)">Add user</button>';
+    controlDiv.innerHTML+='<button type="button" class="database-btn2" data-toggle="modal" data-target="#exampleModalCenter" onclick="FillTboxes('+userNo+')">Edit record</button>';
 
     trow.appendChild(controlDiv);
     

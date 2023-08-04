@@ -17,20 +17,29 @@ button{
 
 .labs{
     display: inline-block;
-    width: 100px;
+    width: 130px;
 }
 input{
     width: 250px;
 }
 
-.database-btn{
-    background-color: blue;
+.database-btn1{
+    background-color: rgb(64, 171, 64);
+    color: white;
+    margin: 3px;
+    padding: 7px;
+}
+.database-btn2{
+    background-color: rgb(191, 66, 66);
     color: white;
     margin: 3px;
     padding: 7px;
 }
 
-.database-btn:hover{
+.database-btn1:hover{
+    background-color: black;
+}
+.database-btn2:hover{
     background-color: black;
 }
 
