@@ -6,7 +6,10 @@
     font-family: 'Roboto', sans-serif;
   }
   a{
-    color: white;
+    color: cyan;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
   }
   body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -18,7 +21,7 @@
     max-width: fit-content;
     margin: 50px auto;
     padding: 20px;
-    background: linear-gradient(135deg, #d4a236, #b12d2d);
+    background: linear-gradient(135deg, #36d448, #511996);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
