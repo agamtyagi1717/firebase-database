@@ -18,7 +18,7 @@
   }
   
   .container {
-    max-width: fit-content;
+    width: 30%;
     margin: 50px auto;
     padding: 20px;
     background: linear-gradient(135deg, #36d448, #511996);
@@ -47,13 +47,12 @@
   }
   
   input {
-    width: 400px;
     margin-bottom: 15px;
     padding: 12px;
     border: 1px solid #555555;
     border-radius: 5px;
     font-size: 16px;
-    background-color: black;
+    background: linear-gradient(135deg, #000000, #363636);
     color: #ffffff;
     transition: border-color 0.3s ease;
   }
@@ -78,6 +77,14 @@
   input[type="submit"]:hover {
     background-color: #45a049;
   }
+
+  @media screen and (max-width: 499px) {
+    .container{
+      width: 80%;
+      padding: 16px;
+    }
+  }
+  
 
 
   
