@@ -1,6 +1,7 @@
 
 
 h1{
+    padding-top: 25px;
     text-align: center;
 }
 
@@ -44,16 +45,32 @@ input{
 }
 
 .datatable{
+    table-layout: fixed;
     width: 100%;
     margin: 50px auto;
     padding: 20px;
 }
 
-@media screen and (max-width: 499px) {
-    .datatable{
-        margin: 50px auto;
-        padding: 20px;
+
+@media screen and (max-width: 650px) {
+    td{
+        padding: 3px;
     }
+    .datatable{
+        margin: 0;
+    }
+    thead{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-block: 10px;
+    }
+    td:first-child{
+        background-color: #555555;
+        color: white;
+        border: black solid 2px;
+    } 
   }
 
 

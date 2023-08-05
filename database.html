@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Database Contents</h1><br><br>
+    <h1>Database Contents</h1><br>
     <table class="datatable">
         <thead> 
             <!-- <th>S.No.</th>
@@ -24,7 +24,7 @@
 
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <form class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -35,22 +35,22 @@
         </div>
         <div class="modal-body">
           <label for="" class="labs">Name: </label>
-          <input type="text" id="NameMod"><br><br>
+          <input type="text" id="NameMod" required="required"/><br><br>
           <label for="" class="labs">Phone: </label>
-          <input type="text" id="PhoneMod"><br><br>
+          <input type="text" id="PhoneMod" required="required"/><br><br>
           <label for="" class="labs">Email: </label>
-          <input type="text" id="EmailMod"><br><br>
+          <input type="text" id="EmailMod" required="required"/><br><br>
           <label for="" class="labs">Date of birth: </label>
-          <input type="date" id="DateMod"><br>
+          <input type="date" id="DateMod" required="required"  /><br>
         </div>
         <div class="modal-footer">
-          <button id="AddModBtn" type="button" class="btn btn-primary" onclick="AddUser()" data-dismiss="modal">Add new record</button>
-          <button id="UpdateModBtn" type="button" class="btn btn-success" onclick="UpdateUser()" data-dismiss="modal">Update record</button>
-          <button id="DeleteModBtn" type="button" class="btn btn-danger" onclick="DeleteUser()" data-dismiss="modal">Delete record</button>
+          <button id="AddModBtn" type="submit" class="btn btn-primary" onclick="AddUser()" data-dismiss="modal">Add new record</button>
+          <button id="UpdateModBtn" type="submit" class="btn btn-success" onclick="UpdateUser()" data-dismiss="modal">Update record</button>
+          <button id="DeleteModBtn" type="submit" class="btn btn-danger" onclick="DeleteUser()" data-dismiss="modal">Delete record</button>
         </div>
       </div>
     </div>
-  </div>
+  </form>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.2/firebase-app.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
