@@ -6,14 +6,15 @@
     font-family: 'Roboto', sans-serif;
   }
   a{
-    color: cyan;
-    font-weight: 500;
+    color: #c3a9bb;
+    font-weight: 700;
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
   }
   body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #353534, #000000);
+    background: linear-gradient(135deg, rgb(46, 24, 43), #000000);
     color: #ffffff;
   }
   
@@ -21,16 +22,15 @@
     width: 30%;
     margin: 50px auto;
     padding: 20px;
-    background: linear-gradient(135deg, #d46836, #732cc9);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: #804674;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   }
   
   h1 {
     text-align: center;
     text-shadow: 0 0 4px #000000;
     margin-bottom: 15px;
-    color: #ffffff;
+    color: #c3a9bb;
   }
   
   form {
@@ -41,8 +41,10 @@
   
   label {
     margin-top: 10px;
+    padding-bottom: 5px;
     font-weight: bold;
-    color: black;
+    color: #c3a9bb;    
+    text-shadow: 0 0 4px #000000;
     
   }
   
@@ -68,8 +70,8 @@
   }
   
   input[type="submit"] {
-    background: #4CAF50;
-    color: #ffffff;
+    background: #77DD77;
+    color: black;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
