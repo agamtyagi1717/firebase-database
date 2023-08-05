@@ -145,15 +145,25 @@ function getAllDataOnce(){
 }
 
 function AddUser(){
-    set(ref(db, "contactForm/"+ ModName.value),{
-        name: ModName.value, 
-        phone: ModPhone.value,
-        email: ModEmail.value,
-        dateOfBirth: ModDate.value
-    })
 
-    alert("User added to the database successfully!");
-    window. location. reload();
+    if(ModName.value==""){
+        alert("Name is mandatory");
+    }
+
+    else{
+        set(ref(db, "contactForm/"+ ModName.value),{
+
+        
+            name: ModName.value, 
+            phone: ModPhone.value,
+            email: ModEmail.value,
+            dateOfBirth: ModDate.value
+        })
+    
+        alert("User added to the database successfully!");
+        window. location. reload();
+    }
+    
 }
 window.AddUser=AddUser;
 
